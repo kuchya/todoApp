@@ -1,0 +1,22 @@
+<div class="container my-2">
+  <div class="card">
+    <div class="card-body">
+      <h2>Add A Task</h2>
+      <form #TaskForm="ngForm" (submit)="AddTask(TaskForm)">
+        <div class="form-group">
+          <label for="task_name"></label>
+          <input type="text" ngModel
+            class="form-control" name="task_name" id="task_name" placeholder="Enter Task Details">
+        </div>
+        <div>
+          <button class="btn btn-success m-2">
+            Add
+          </button>
+          <a routerLink="/theme" class="btn btn-danger m-2">
+            Back
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

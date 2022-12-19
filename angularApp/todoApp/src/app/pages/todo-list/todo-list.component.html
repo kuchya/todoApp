@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-body">
+    <h2>Tasks</h2>
+    <table class="table">
+      <tr>
+        <th>Task Name</th>
+        <th>Created On</th>
+      </tr>
+      <tr *ngFor="let task of tasks">
+        <td>{{task.task_name | titlecase}}</td>
+        <td>{{task.created_at | date:'medium' }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
